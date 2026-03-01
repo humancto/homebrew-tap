@@ -1,26 +1,26 @@
 class Forge < Formula
   desc "Internet-native programming language with natural syntax and Cranelift JIT"
   homepage "https://github.com/humancto/forge-lang"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/humancto/forge-lang/releases/download/v0.3.1/forge-v0.3.1-aarch64-apple-darwin.tar.gz"
-      sha256 "15b25a7627840eb3c104d59bcf740b80b91fc0a3277e3ea06a43b97e0fe2c80f"
+      url "https://github.com/humancto/forge-lang/releases/download/v0.3.2/forge-v0.3.2-aarch64-apple-darwin.tar.gz"
+      sha256 "16ec053105c0a1b461d26222dbaec21f4840e69b10f83bba568c7b424b95275a"
     else
-      url "https://github.com/humancto/forge-lang/releases/download/v0.3.1/forge-v0.3.1-x86_64-apple-darwin.tar.gz"
-      sha256 "741f76cf3172e043bc4bbdeb691812b2d9226ebb1e11a098b2097f4958169d8a"
+      url "https://github.com/humancto/forge-lang/releases/download/v0.3.2/forge-v0.3.2-x86_64-apple-darwin.tar.gz"
+      sha256 "3aa71d878f0f8f1868c03c07c7d0c6a1cfef7b13541d431182893bcc04f3a0c1"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/humancto/forge-lang/releases/download/v0.3.1/forge-v0.3.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "42447051e0c1a3159a4c3e6ff15f48be5bd4fb030f543c0cb13337a7d0d9f6d2"
+      url "https://github.com/humancto/forge-lang/releases/download/v0.3.2/forge-v0.3.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "3954dc835abf02854a3e54fac288c176de8997dd041eda9a29838e492ec803c8"
     else
-      url "https://github.com/humancto/forge-lang/releases/download/v0.3.1/forge-v0.3.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d6a2972fedf6f2c78479343fa45ab85176e17572865b7e328d534fd15fd0e943"
+      url "https://github.com/humancto/forge-lang/releases/download/v0.3.2/forge-v0.3.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "180c0839b63643acce6914058401f52390e9f3baabb75b3852a472d60344b5f4"
     end
   end
 
