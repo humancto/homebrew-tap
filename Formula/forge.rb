@@ -1,26 +1,26 @@
 class Forge < Formula
   desc "Internet-native programming language with natural syntax and Cranelift JIT"
   homepage "https://github.com/humancto/forge-lang"
-  version "0.2.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/humancto/forge-lang/releases/download/v0.2.0/forge-v0.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "0d321216f5fcb91ff2396963a15b8aadb8064b8895f432e87d4f2fb6e9c00e95"
+      url "https://github.com/humancto/forge-lang/releases/download/v0.3.1/forge-v0.3.1-aarch64-apple-darwin.tar.gz"
+      sha256 "090acb049320011e044cc4d64a31ea1d6e9fa1205834a5f6fb54605e09270df1"
     else
-      url "https://github.com/humancto/forge-lang/releases/download/v0.2.0/forge-v0.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "be7f9ffe0cd1d809215c8222216a26af361a1961813e68e5c16c01332e191d59"
+      url "https://github.com/humancto/forge-lang/releases/download/v0.3.1/forge-v0.3.1-x86_64-apple-darwin.tar.gz"
+      sha256 "49de9bb79da7f021b572e01524d3cd0a9eddb36ea50056dca7304042773d1f27"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/humancto/forge-lang/releases/download/v0.2.0/forge-v0.2.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c411db0d251d857a4bd9887f1306ab3fae50abcecfc69171f26a1f2629e98d08"
+      url "https://github.com/humancto/forge-lang/releases/download/v0.3.1/forge-v0.3.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "6c24e9bdbe6bc742ce370a47273a755f9bfd6caba88c1b4e499f58468c4fa976"
     else
-      url "https://github.com/humancto/forge-lang/releases/download/v0.2.0/forge-v0.2.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d4006ef243c04c6044e7442126f06a9edd1c243d7936cc9693394ea5b0378ad0"
+      url "https://github.com/humancto/forge-lang/releases/download/v0.3.1/forge-v0.3.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "85a822a9c5ece7418d3889fc2866dfd1ff7b59ad9e06b407dd9495e3ff4da524"
     end
   end
 
@@ -32,3 +32,4 @@ class Forge < Formula
     assert_match "Forge v", shell_output("#{bin}/forge --version")
   end
 end
+
