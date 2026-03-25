@@ -1,22 +1,22 @@
 class Punch < Formula
   desc "The Agent Combat System — deploy autonomous AI agent squads from a single binary"
   homepage "https://github.com/humancto/punch"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/humancto/punch/releases/download/v1.0.0/punch-aarch64-apple-darwin.tar.gz"
-      sha256 "d5e1999818bee83c98c103e0b6cf0bd949f52d3b3aa02d912e9c39973c2eddae"
+      url "https://github.com/humancto/punch/releases/download/v1.1.0/punch-aarch64-apple-darwin.tar.gz"
+      sha256 "9576e8ffcd4ede18da2bb22c1e907d404839a577e7434d29161b335077e218f1"
     else
-      url "https://github.com/humancto/punch/releases/download/v1.0.0/punch-x86_64-apple-darwin.tar.gz"
-      sha256 "0438c90f8c68d9f48531af1312052bfb42db862fcd3fec15008518dce5218090"
+      url "https://github.com/humancto/punch/releases/download/v1.1.0/punch-x86_64-apple-darwin.tar.gz"
+      sha256 "e66719de2d75161463ee9d15c891ae0c0ff8f3b986fc9618d1ee97338f49dc77"
     end
   end
 
   on_linux do
-    url "https://github.com/humancto/punch/releases/download/v1.0.0/punch-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "3b57bad7fc901519025f1a5257455fa13e82623fca2e6ec23bd2fa683c679d2e"
+    url "https://github.com/humancto/punch/releases/download/v1.1.0/punch-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "a3173021057316d815c90b1ba838d8244fa3f6aeea41c232907668253cf784d9"
   end
 
   def install
