@@ -1,27 +1,24 @@
 class Forge < Formula
   desc "Internet-native programming language with natural syntax and Cranelift JIT"
   homepage "https://github.com/humancto/forge-lang"
-  version "0.5.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/humancto/forge-lang/releases/download/v0.5.0/forge-v0.5.0-aarch64-apple-darwin.tar.gz"
-      sha256 "d0502ebb5df37b1c06bdc569c335556ea89a85eb01e134e3fb2611831c263952"
+      url "https://github.com/humancto/forge-lang/releases/download/v0.7.1/forge-v0.7.1-darwin-arm64.tar.gz"
+      sha256 "cf0286d348a96a75b30ff3d8325934d3b8fa2f182017f39971597cd3fea06ded"
     else
-      url "https://github.com/humancto/forge-lang/releases/download/v0.5.0/forge-v0.5.0-x86_64-apple-darwin.tar.gz"
-      sha256 "10769c8155811100a8a92772263502f89bd05b54dde81dc23936f27b53b9168d"
+      # x86_64 macOS binary not yet available for v0.7.1
+      # Install from source via: cargo install forge-lang
+      odie "Forge v0.7.1 pre-built binary is only available for Apple Silicon. Install from source: cargo install forge-lang"
     end
   end
 
   on_linux do
-    if Hardware::CPU.arm?
-      url "https://github.com/humancto/forge-lang/releases/download/v0.5.0/forge-v0.5.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "80c8fa05e8f520e536bc4eec95b5c542f6d9d90aa369a1d4a26ae529b12884a2"
-    else
-      url "https://github.com/humancto/forge-lang/releases/download/v0.5.0/forge-v0.5.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3683e9c745d29027b9d95b877f1c7336377ad6b1cd518d7b2d908d7471b1fb07"
-    end
+    # Linux binaries not yet available for v0.7.1
+    # Install from source via: cargo install forge-lang
+    odie "Forge v0.7.1 pre-built binary is only available for macOS ARM64. Install from source: cargo install forge-lang"
   end
 
   def install
