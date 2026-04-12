@@ -7,9 +7,6 @@ class Forge < Formula
   url "https://github.com/humancto/forge-lang/releases/download/v0.7.1/forge-v0.7.1-darwin-arm64.tar.gz"
   sha256 "cf0286d348a96a75b30ff3d8325934d3b8fa2f182017f39971597cd3fea06ded"
 
-  depends_on arch: :arm64
-  depends_on :macos
-
   def install
     bin.install "forge"
   end
